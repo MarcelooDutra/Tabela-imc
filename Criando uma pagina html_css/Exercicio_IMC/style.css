@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root{
+    --primary-color: orange;
+    --primary-color-darker: #000;
+}
+
+*{
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: 'open sans', 'sans-serif';
+    font-size: 1.3em;
+    line-height: 1.0em;
+    color: rgb(219, 124, 0);
+}
+
+.escopo{
+   width: 800px;
+    margin: 60px auto;
+    background-color: #000;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+form.lado{
+    position: absolute;
+    top: 85px;
+    left: 550px;
+    text-align: right;
+    padding: 0px 210px;
+    margin: 60px;
+}
+
+form input, form label, form button{
+    display: block;
+    width: 65%;
+    border-radius: 10px;
+}
+
+form input{
+    font-size: 25px;
+    height: 35px;
+    padding: 0 20px;
+}
+
+form input:focus{
+   outline: 1px solid var(--primary-color);
+}
+
+form button{
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover{
+background-color: var(--primary-color-darker);
+color: green;
+}
+
+form button:active{
+    background-color: orange;
+}
+
+img#altura{
+    height: 45px;
+    right: 45px;
+    position: absolute;
+    top: 605px;
+    left: 390px;
+}
+
+img#balanca{
+    height: 35px;
+    right: 35px;
+    position: absolute;
+    top: 510px;
+    left: 380px;
+}
+
+img#imagem01{
+    height: 250px;
+    right: 250px;
+    position: absolute;
+    top: 125px;
+    left: 540px;
+}
+
+img#imagem02{
+    height: 190px;
+    right: 190px;
+    position: absolute;
+    top: 565px;
+    left: 830px;
+}
