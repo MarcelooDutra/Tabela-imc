@@ -1,4 +1,4 @@
-const calcular = document.getElementById('calcular')//Fic de forma global.
+const calcular = document.getElementById('calcular')//Fica de forma global.
 
 //Cria-se uma funcao imc.
 function imc(){
@@ -9,10 +9,13 @@ function imc(){
     //condicional de teste.
     if(peso.value !== '' && altura.value !== ''){
         
+        //cria-se uma variavel para o valor do imc
         const valorImc = (peso / altura * altura)
 
+        //cria-se uma variavel para cada classificção onde será sobrescrita de acordo com cada condicao.
         let classPeso = ''
 
+        //cria-se as condicções 
         if(valorImc < 18.5){
             classPeso = 'Esta abaixo do peso'
         }else if(valorImc >= 18.5 && valorImc <= 24.9){
@@ -26,10 +29,12 @@ function imc(){
         }else{
             classPeso = "Obesidade grau 3"
 
+            //cria-se um resultado para imprimir na cx de texto o valor do imc.
             res.innerTextContent = valorImc
         }
     }else{
         res.innerTextContent = 'Invalido. Preencha os campos!'
     }
 }
+//cria-se uma ação para o botão de calculo.
 calcular.addEventListener('click', imc)
