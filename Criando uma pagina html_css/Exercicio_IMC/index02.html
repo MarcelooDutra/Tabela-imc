@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,11 @@
     <title>Exercicio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="corpo">
     <section class="escopo">
         <form action="tabela imc">
-            <h1>Tabela IMC</h1>      
+            <h1 id="titulo">Tabela IMC</h1>
+            <hr>      
                 <h3>IMC</h3>               
                     <p>Menos que 18,5</p>     
                     <p>Entre 18,5 e 24,9</p>          
@@ -30,21 +31,25 @@
                 <p>Obesidade Grau 3</p>
         </form>
 
-        <form  class="lado02" action="calcule seu imc">
+        <form class="lado02" action="calcule seu imc">
+
             <h1>Calcule seu IMC</h1>
             <img id="balanca" src="balanca-laranja.png" alt="balanca">
             <label for="peso">Peso:</label>
             <img id="altura" src="altura-laranja.png" alt="altura">
-            <p><input type="number"></p>
+            <p><input id="num01" type="number"></p>
             <label for="altura">Altura:</label>
-            <p><input type="number"></p>
-            <p><button>Calcular</button></p>
-            <img id="imagem01" src="download.png" alt="foto imc">
+            <p><input  id="num02" type="number"></p>
+            <p><button id="calcular" >Calcular</button></p>
+            <img id="imagem01" src="calculadora-de-imc-935x614.jpg" alt="foto imc">
         </form>
+
+        <div id="res">
+            <p style="color: orange;"></p><strong><i>Resultado:</i></strong></p>
             
-            <img id="imagem02" src="Comparacao-IMC-Laranja.jpg" alt="foto02">
+        </div>
+
     </section>
 
     <script src="script.js"></script>
 </body>
-</html>
