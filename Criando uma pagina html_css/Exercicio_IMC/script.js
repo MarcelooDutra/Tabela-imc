@@ -1,4 +1,4 @@
-const calcular = document.getElementById('calcular')//Fica de forma global.
+//const calcular = document.getElementById('calcular')//Fica de forma global.
 
 //Cria-se uma funcao imc.
 function imc(){
@@ -10,7 +10,7 @@ function imc(){
     if(peso.value !== '' && altura.value !== ''){
         
         //cria-se uma variavel para o valor do imc
-        const valorImc = (peso / altura * altura)
+        const valorImc = (peso / (altura * altura)).toFixed(1)
 
         //cria-se uma variavel para cada classificção onde será sobrescrita de acordo com cada condicao.
         let classPeso = ''
@@ -37,4 +37,4 @@ function imc(){
     }
 }
 //cria-se uma ação para o botão de calculo.
-calcular.addEventListener('click', imc)
+//calcular.addEventListener('click', imc)

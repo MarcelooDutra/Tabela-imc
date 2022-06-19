@@ -27,4 +27,7 @@ resultado.innerTexContent = valorImc.
 resultado.innerTextContent = 'preencha os campos'
 
 - Ao final a ação do button para que este calculo aconteça utilizando a seguinte sintaxe ex:
-fora do escopo da funcao calculo.addVentListene('click', imc). Onde ele vai dar acao ao clicar e dizer o que vai calcular que e o imc(funcao criada la no topo com as variaveis.)*/
+fora do escopo da funcao calculo.addVentListene('click', imc). Onde ele vai dar acao ao clicar e dizer o que vai calcular que e o imc(funcao criada la no topo com as variaveis.)
+
+-UMA OBS IMPORTANTE. NÃO PRECISAMOS CRIAR FUNCAO PARA O BOTAO, POIS BASTA A FUNCAO TER O MESMO NOME DE ACAO DO BOTAO;
+*/
